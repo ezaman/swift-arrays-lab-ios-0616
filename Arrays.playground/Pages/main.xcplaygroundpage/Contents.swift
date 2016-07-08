@@ -14,8 +14,7 @@
 // write your code here
 
 
-
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question2
@@ -25,13 +24,16 @@
 
 
 
-
+var shoppingList: [String] = ["Bread","Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 /*: question3
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
+
+var futureShoppingList: [String]
+futureShoppingList = ["Bread","Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -44,8 +46,7 @@
 
 
 
-
-
+let cheeseSandwich: [String] = ["Bread","Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 /*: question5
  ### 5. Create a second array called 'desertList' with a type specified using and contains the string values "Cookie dough", "Icecream"
@@ -53,10 +54,7 @@
 // write your code here
 
 
-
-
-
-
+var desertList: [String] = ["Cookie dough", "Icecream"]
 
 /*: question6
  ### 6. Write an array called 'afternoonAttendance' **with** a type specified that contains the integer values 2, 10, 3, 15, 7.
@@ -65,9 +63,7 @@
 
 
 
-
-
-
+let afternoonAttendance: [Int] = [10, 3, 15, 7]
 
 
 /*: question7
@@ -76,24 +72,17 @@
 // write your code here
 
 
-
-
-
-
-
-
+var itemToPrint = shoppingList[1]
+print(itemToPrint)
 /*: question8
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the screen.
  */
-// write your code here
 
 
+futureShoppingList[2] = "Chicken"
 
 
-
-
-
-
+print(futureShoppingList)
 /*: question9
  ### 9. Create a function named 'lifesEssential' that accepts a string of arrays as a parameter called 'ingredients' and returns a boolean. Inside the function check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value boolean, if not false.
  */
@@ -101,7 +90,13 @@
 
 
 
-
+func lifesEssential (ingredients:[String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    }else {
+       return false
+    }
+}
 
 
 /*: question10
@@ -110,10 +105,10 @@
 // write your code here
 
 
+lifesEssential(shoppingList)
 
 
-
-
+print(lifesEssential(shoppingList))
 
 
 /*: question11
@@ -121,8 +116,9 @@
  */
 // write your code here
 
+lifesEssential(desertList)
 
-
+print(lifesEssential(desertList))
 
 
 //: On solution branch, there should be a link here to the solution file.
